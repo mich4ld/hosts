@@ -40,3 +40,5 @@ function main() {
   
   append_hosts
 }
+
+main
