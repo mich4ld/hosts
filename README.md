@@ -17,6 +17,23 @@ $ chmod +x ./install.sh
 $ sudo ./install.sh
 ```
 
+### Usage
+```
+$ sudo ./install.sh
+
+What do you want to block?
+1) Ads
+2) Ads and gambling
+3) Ads, gambling and porn
+```
+
+or
+
+```
+$ sudo ./install.sh 3
+```
+
+
 Read script before you execute it
 ```bash
 $ less ./install.sh
