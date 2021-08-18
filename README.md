@@ -14,3 +14,9 @@ Read script before you execute it
 ```bash
 $ less ./install.sh
 ```
+Tested with:
+- Arch
+- Manjaro
+- Mint
+- Fedora
+- FreeBSD
