@@ -1,8 +1,8 @@
 cd "$(dirname "$0")"
-HOSTS_PATH = '/etc/hosts'
-ADS_GAMBLING_PORN_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts'
-ADS_GAMBLING_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts'
-ADS_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
+$HOSTS_PATH = '/etc/hosts'
+$ADS_GAMBLING_PORN_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts'
+$ADS_GAMBLING_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts'
+$ADS_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 
 function block_gambling_porn() {
   sudo curl $ADS_GAMBLING_PORN_HOSTS > $HOSTS_PATH
