@@ -23,6 +23,8 @@ function append_hosts() {
 }
 
 function install() {
+  echo "Downloading hosts file..."
+  
   if [ $1 -eq 1 ]; then
     block_ads_only
   elif [ $1 -eq 2 ]; then
@@ -33,6 +35,7 @@ function install() {
     echo "Invalid option"
     exit 1
   fi
+  
 }
 
 function type_answer() {
