@@ -1,22 +1,23 @@
 cd "$(dirname "$0")"
+HOSTS_PATH = '/etc/hosts'
 ADS_GAMBLING_PORN_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts'
 ADS_GAMBLING_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts'
 ADS_HOSTS = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 
 function block_gambling_porn() {
-  sudo curl $ADS_GAMBLING_PORN_HOSTS >> /etc/hosts
+  sudo curl $ADS_GAMBLING_PORN_HOSTS > $HOSTS_PATH
 }
 
 function block_gambling() {
-  sudo curl $ADS_GAMBLING_HOSTS >> /etc/hosts
+  sudo curl $ADS_GAMBLING_HOSTS > $HOSTS_PATH
 }
 
 function block_ads_only() {
-  sudo curl $ADS_HOSTS >> /etc/hosts
+  sudo curl $ADS_HOSTS > $HOSTS_PATH
 }
 
 function append_hosts() {
-  sudo cat ./hosts >> /etc/hosts
+  sudo cat ./hosts >> $HOSTS_PATH
 }
 
 function main() {
