@@ -5,19 +5,19 @@ ADS_GAMBLING_HOSTS='https://raw.githubusercontent.com/StevenBlack/hosts/master/a
 ADS_HOSTS='https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 
 function block_gambling_porn() {
-  sudo curl $ADS_GAMBLING_PORN_HOSTS > $HOSTS_PATH
+  curl $ADS_GAMBLING_PORN_HOSTS > $HOSTS_PATH
 }
 
 function block_gambling() {
-  sudo curl $ADS_GAMBLING_HOSTS > $HOSTS_PATH
+  curl $ADS_GAMBLING_HOSTS > $HOSTS_PATH
 }
 
 function block_ads_only() {
-  sudo curl $ADS_HOSTS > $HOSTS_PATH
+  curl $ADS_HOSTS > $HOSTS_PATH
 }
 
 function append_hosts() {
-  sudo cat ./hosts >> $HOSTS_PATH
+  cat ./hosts >> $HOSTS_PATH
 }
 
 function main() {
@@ -26,13 +26,13 @@ function main() {
   echo '2) Ads and gambling'
   echo '3) Ads, gambling and porn'
   
-  read $choice
+  read choice
   
-  if [ $choice == "1" ]; then
+  if [ $choice -eq 1 ]; then
     block_ads_only
-  elif [ $choice == "2" ]; then
+  elif [ $choice -eq 2 ]; then
     block_gambling
-  elif [ $choice == "3" ]; then
+  elif [ $choice -eq 3 ]; then
     block_gambling_porn
   else
     echo "Invalid option"
