@@ -31,6 +31,7 @@ function install() {
     block_gambling_porn
   else
     echo "Invalid option"
+    exit 1
   fi
 }
 
