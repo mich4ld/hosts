@@ -28,16 +28,14 @@ function main() {
   
   read $choice
   
-  if [ $choice -eq 1 ]; then
+  if [ $choice == 1 ]; then
     block_ads_only
-  fi
-  
-  if [ $choice -eq 2 ]; then
+  elif [ $choice == 2 ]; then
     block_gambling
-  fi
-  
-  if [ $choice -eq 3 ]; then
+  elif [ $choice == 3 ]; then
     block_gambling_porn
+  else
+    echo "Invalid option"
   fi
   
   append_hosts
