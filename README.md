@@ -16,6 +16,7 @@ $ less ./install.sh
 ```
 Tested with:
 - Arch
+- Alpine
 - Manjaro
 - Mint
 - Fedora
