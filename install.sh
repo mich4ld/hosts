@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd "$(dirname "$0")"
 HOSTS_PATH='/etc/hosts'
 ADS_GAMBLING_PORN_HOSTS='https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts'
