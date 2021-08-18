@@ -16,6 +16,18 @@ $ cd hosts
 $ chmod +x ./install.sh
 $ sudo ./install.sh
 ```
+Read script before you execute it
+```bash
+$ less ./install.sh
+```
+Tested with:
+- Arch
+- Alpine
+- Manjaro
+- Mint
+- Fedora
+- FreeBSD
+
 
 ### Usage
 ```
@@ -32,16 +44,3 @@ or
 ```
 $ sudo ./install.sh 3
 ```
-
-
-Read script before you execute it
-```bash
-$ less ./install.sh
-```
-Tested with:
-- Arch
-- Alpine
-- Manjaro
-- Mint
-- Fedora
-- FreeBSD
