@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cd "$(dirname "$0")"
 
 HOSTS_PATH='/etc/hosts'
