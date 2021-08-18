@@ -4,7 +4,7 @@ Block ads and bad stuff using `hosts` file.
 Domain list: https://github.com/StevenBlack/hosts + my additional domains
 
 ### Why
-I created this script for automatization (I often install / testing Linux distributions and playing with virtual machines). Work is still in progress.
+I created this script for automation (I often install / testing Linux distributions and playing with virtual machines). Work is still in progress.
 
 ### Dependencies
 You need: `curl` and `bash` (Alpine, FreeBSD)
