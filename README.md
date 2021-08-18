@@ -1,8 +1,7 @@
 # Custom hosts file installation script
 Block ads and bad stuff using `hosts` file.
 
-Domain list: https://github.com/StevenBlack/hosts
-+ my additional domains
+Domain list: https://github.com/StevenBlack/hosts + my additional domains
 
 ```bash
 $ git clone https://github.com/mich4ld/hosts
