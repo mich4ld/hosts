@@ -28,11 +28,11 @@ function main() {
   
   read $choice
   
-  if [ $choice == 1 ]; then
+  if [ $choice == "1" ]; then
     block_ads_only
-  elif [ $choice == 2 ]; then
+  elif [ $choice == "2" ]; then
     block_gambling
-  elif [ $choice == 3 ]; then
+  elif [ $choice == "3" ]; then
     block_gambling_porn
   else
     echo "Invalid option"
