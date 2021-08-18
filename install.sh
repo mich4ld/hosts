@@ -37,7 +37,6 @@ function install() {
     echo "Invalid option"
     exit 1
   fi
-  
 }
 
 function type_answer() {
