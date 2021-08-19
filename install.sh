@@ -67,7 +67,7 @@ function append_hosts() {
 }
 
 function install() {
-  echo "Downloading hosts file..."
+  echo "===> Downloading hosts file..."
   
   if [ $1 -eq 1 ]; then
     block_ads_only
@@ -98,7 +98,7 @@ function install() {
 }
 
 function type_answer() {
-  echo 'What do you want to block?'
+  echo '===> What do you want to block?'
   echo '1) Ads'
   echo '2) Ads and gambling'
   echo '3) Ads and social'
@@ -122,4 +122,4 @@ else
 fi
 
 append_hosts
-echo "New hosts file generated in: $HOSTS_PATH"
+echo "===> New hosts file generated in: $HOSTS_PATH"
