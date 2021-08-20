@@ -11,10 +11,9 @@ You need: `curl` and `bash` (Alpine, FreeBSD)
 
 ### Installation
 ```bash
-$ git clone https://github.com/mich4ld/hosts
-$ cd hosts
-$ chmod +x ./install.sh
-$ sudo ./install.sh
+$ curl https://raw.githubusercontent.com/mich4ld/hosts/main/install.sh > sethosts.sh
+$ chmod +x sethosts.sh
+$ sudo ./sethosts.sh
 ```
 Read script before you execute it
 ```bash
@@ -31,7 +30,7 @@ Tested with:
 
 ### Usage
 ```
-$ sudo ./install.sh
+$ sudo ./sethosts.sh
 
 What do you want to block?
 1) Ads
@@ -42,5 +41,5 @@ What do you want to block?
 or
 
 ```
-$ sudo ./install.sh 3
+$ sudo ./sethosts.sh 3
 ```
