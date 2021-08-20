@@ -3,6 +3,7 @@
 cd "$(dirname "$0")"
 
 HOSTS_PATH='/etc/hosts'
+MY_HOSTS='https://raw.githubusercontent.com/mich4ld/hosts/main/hosts'
 
 ADS_HOSTS='https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 ADS_SOCIAL_HOSTS='https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts'
@@ -63,7 +64,7 @@ function block_gambling_porn_fakenews_social() {
 }
 
 function append_hosts() {
-  cat ./hosts >> $HOSTS_PATH
+  curl $MY_HOSTS >> $HOSTS_PATH
 }
 
 function install() {
