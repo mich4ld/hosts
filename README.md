@@ -17,7 +17,7 @@ $ sudo ./sethosts.sh
 ```
 Read script before you execute it
 ```bash
-$ less ./install.sh
+$ less ./sethosts.sh
 ```
 Tested with:
 - Arch
